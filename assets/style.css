@@ -63,7 +63,7 @@ body {
     font-weight: 700;
 }
 
-.cartao:hover .cartao__conteudo {
+.cartao.active .cartao__conteudo {
     transform: rotateY(180deg);
 }
 
@@ -98,15 +98,15 @@ footer p {
 }
 
 @media (max-width: 560px) {
-    body{
+    body {
         background: url(img/bg-mobile.webp);
     }
 
-.cartao{
-    flex:1 0 calc( 100% - 1rem);
-}
+    .cartao {
+        flex: 1 0 calc(100% - 1rem);
+    }
 
-    .cartao__conteudo h3{
-         font: size 3.8vw;
+    .cartao__conteudo h3 {
+        font: size 3.8vw;
     }
 }
